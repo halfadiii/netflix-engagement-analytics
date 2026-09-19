@@ -1,0 +1,96 @@
+region_id,region_name,iso2,is_global
+1,Argentina,AR,False
+2,Australia,AU,False
+3,Austria,AT,False
+4,Bahamas,BS,False
+5,Bahrain,BH,False
+6,Bangladesh,BD,False
+7,Belgium,BE,False
+8,Bolivia,BO,False
+9,Brazil,BR,False
+10,Bulgaria,BG,False
+11,Canada,CA,False
+12,Chile,CL,False
+13,Colombia,CO,False
+14,Costa Rica,CR,False
+15,Croatia,HR,False
+16,Cyprus,CY,False
+17,Czech Republic,CZ,False
+18,Denmark,DK,False
+19,Dominican Republic,DO,False
+20,Ecuador,EC,False
+21,Egypt,EG,False
+22,El Salvador,SV,False
+23,Estonia,EE,False
+24,Finland,FI,False
+25,France,FR,False
+26,Germany,DE,False
+27,Global,,True
+28,Greece,GR,False
+29,Guadeloupe,GP,False
+30,Guatemala,GT,False
+31,Honduras,HN,False
+32,Hong Kong,HK,False
+33,Hungary,HU,False
+34,Iceland,IS,False
+35,India,IN,False
+36,Indonesia,ID,False
+37,Ireland,IE,False
+38,Israel,IL,False
+39,Italy,IT,False
+40,Jamaica,JM,False
+41,Japan,JP,False
+42,Jordan,JO,False
+43,Kenya,KE,False
+44,Kuwait,KW,False
+45,Latvia,LV,False
+46,Lebanon,LB,False
+47,Lithuania,LT,False
+48,Luxembourg,LU,False
+49,Malaysia,MY,False
+50,Maldives,MV,False
+51,Malta,MT,False
+52,Martinique,MQ,False
+53,Mauritius,MU,False
+54,Mexico,MX,False
+55,Morocco,MA,False
+56,Netherlands,NL,False
+57,New Caledonia,NC,False
+58,New Zealand,NZ,False
+59,Nicaragua,NI,False
+60,Nigeria,NG,False
+61,Norway,NO,False
+62,Oman,OM,False
+63,Pakistan,PK,False
+64,Panama,PA,False
+65,Paraguay,PY,False
+66,Peru,PE,False
+67,Philippines,PH,False
+68,Poland,PL,False
+69,Portugal,PT,False
+70,Qatar,QA,False
+71,Romania,RO,False
+72,Russia,RU,False
+73,Réunion,RE,False
+74,Saudi Arabia,SA,False
+75,Serbia,RS,False
+76,Singapore,SG,False
+77,Slovakia,SK,False
+78,Slovenia,SI,False
+79,South Africa,ZA,False
+80,South Korea,KR,False
+81,Spain,ES,False
+82,Sri Lanka,LK,False
+83,Sweden,SE,False
+84,Switzerland,CH,False
+85,Taiwan,TW,False
+86,Thailand,TH,False
+87,Trinidad and Tobago,TT,False
+88,Turkey,TR,False
+89,Ukraine,UA,False
+90,United Arab Emirates,AE,False
+91,United Kingdom,GB,False
+92,United States,US,False
+93,Uruguay,UY,False
+94,Venezuela,VE,False
+95,Vietnam,VN,False

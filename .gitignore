@@ -1,0 +1,11 @@
+# Large / regeneratable data - fetch with scripts/fetch_data.sh,
+# rebuild with scripts/build_star_schema.py
+data/raw/all-weeks-countries.tsv
+data/netflix_engagement.db
+
+# Power BI
+*.pbix.bak
+~$*.pbix
+
+__pycache__/
+*.pyc
