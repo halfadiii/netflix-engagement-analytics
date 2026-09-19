@@ -9,3 +9,6 @@ data/netflix_engagement.db
 
 __pycache__/
 *.pyc
+
+# Secrets: API keys live here and never in git
+.env

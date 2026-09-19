@@ -203,6 +203,47 @@ bring that same instinct — validate the pipeline against known official totals
 first result of a window function — to the content, subscriber, and product engagement questions
 this team owns."
 
+## 9. Trailer views against engagement (YouTube)
+
+Does a trailer that draws a big audience on YouTube go with a title that draws
+a big audience on Netflix? A small, deliberately careful test over **20 titles
+from 2026H1**: 10 series and 10 films, each released and first charting in the
+same half-year so their trailers have had a similar time to gather views, and
+spread from the biggest hit (Bridgerton: Season 4, 889.8M hours) to titles that
+spent a single week at the bottom of the Top 10.
+
+**The matching was done by hand.** Searching "<title> trailer" returns fan
+re-uploads, reviews and trailers for other films: the first match for *This is
+I* was a different film's teaser, and *Eat Pray Bark* only had a German-language
+clip. Every trailer in `data/trailers/trailer_map.csv` was checked against its
+title, taken from the official Netflix channel for the title's home market, and
+carries a note saying why it is there. Two titles were replaced because no
+real trailer existed.
+
+**The view counts are not in this repository.** YouTube's API policies let an
+app keep statistics for videos it doesn't own for no more than 30 days
+(Developer Policies III.E.4.d) and require showing current data (III.E.4.f).
+So `scripts/fetch_trailers.py` writes them only to the gitignored SQLite build,
+stamps every row with `fetched_at`, and deletes rows older than 30 days on every
+run. The live dashboard fetches them fresh, at most once a day.
+
+```bash
+# needs YOUTUBE_API_KEY in .env (gitignored)
+python scripts/fetch_trailers.py     # 1 API unit; fills fact_trailer_engagement, runs sql/trailers.sql
+```
+
+`sql/trailers.sql` sets each title's trailer views beside its hours viewed,
+peak global rank and weeks in the global Top 10, ranked **within** series and
+within films. Film trailers draw far more views than series trailers at similar
+viewing levels, so ranking them together would mostly measure that split.
+
+**What it can't tell you.** Twenty titles is enough to see whether the two
+roughly move together, not to put a number on it. View counts are cumulative to
+the day they were fetched, and a hit sends people back to its trailer, so the
+arrow can point either way. No correlation coefficient is published for that
+reason, and because YouTube's policies (III.E.4.h) rule out building new
+metrics from its data.
+
 ## Repo structure
 
 ```
@@ -214,4 +255,7 @@ scripts/build_star_schema.py   ETL -> dims/facts -> SQLite + CSVs
 scripts/run_kpis.py            runs sql/kpis.sql and prints every result set
 sql/schema.sql      DDL for the star schema
 sql/kpis.sql        the KPI / analysis queries (window functions)
+sql/trailers.sql    trailer views beside hours and chart performance
+scripts/fetch_trailers.py      current YouTube counts -> local DB only (30-day limit)
+data/trailers/trailer_map.csv  hand-checked trailer for each of the 20 titles
 ```
