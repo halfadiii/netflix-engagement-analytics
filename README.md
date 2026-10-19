@@ -101,7 +101,7 @@ mistake to repeat.
 17,371, +7.4% YoY) while average hours *per title* actually fell (5.88M → 5.62M). The platform is
 growing by adding more titles that each individually earn less, not by making existing hits bigger.
 
-**Shows earn ~3x what Movies earn per title, and the gap is widening.** In 2026H1, Shows are 47%
+**Shows earn ~3.6x what Movies earn per title, and the gap is widening.** In 2026H1, Shows are 47%
 of catalog volume but 76.1% of hours (up from 74.7% in 2025H1); Movies grew in title count
 (8,674 → 9,179) while *shrinking* in absolute hours (24.06B → 23.31B). Each incremental movie is
 diluting the movie category's average rather than adding to it — a real content-portfolio signal
@@ -133,7 +133,7 @@ the premiere alone undercounts what the release actually earned.
 
 ## 6. Power BI build
 
-I can't operate Power BI Desktop directly, so here's the concrete build path against the CSVs
+The report itself isn't published yet. Here's the concrete build path against the CSVs
 already sitting in `data/model/`:
 
 1. **Get Data > Text/CSV**, import all 5 files in `data/model/` (`dim_date`, `dim_title`,
@@ -196,7 +196,7 @@ constellation in SQLite, wrote the KPI layer in SQL with window functions for ra
 trend logic, and found that Netflix's recent hours growth is coming from a widening content
 catalog rather than bigger hits — average hours per title is actually declining even as total
 hours grow — and that a new season's premiere measurably revives engagement with its own back
-catalog, pulling its first season back into the Top 10 in 85 of 94 markets in a single week. Along the way I hit and fixed two real
+catalog, pulling its first season back into the Top 10 of 56 of 94 markets in premiere week and 85 the week after. Along the way I hit and fixed two real
 data-quality bugs: a title-collision issue that silently merged two different show seasons, and
 a window-function ordering mistake that made a 'biggest movers' query return nothing. I'd want to
 bring that same instinct — validate the pipeline against known official totals, don't trust the
