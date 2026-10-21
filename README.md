@@ -123,11 +123,12 @@ different finding from stickiness: Canada watches what's globally trending right
 quickly, rather than settling into a smaller rotation of favorites. Conflating "watches what's
 globally popular" with "watches media intensely" would be a real analytical mistake here.
 
-**A season premiere revives the entire back catalog, simultaneously, worldwide.** In the week
-"The Gentlemen: Season 2" launched (debuting #1 globally with 73.4M hours, charting in 90 of 94
-markets), "Season 1" — dormant on the weekly charts since mid-2024 — re-entered the Top 10 in **85
-of 94 markets**: climbing in 53 of them (by up to 8 rank places) and re-entering from outside the
-chart entirely in 29 more, all in the same week. This is a directly actionable "content driver"
+**A season premiere revives the back catalog, worldwide, within two weeks.** "The Gentlemen:
+Season 2" premiered in the week of 6 September 2026 at #3 globally (49.8M hours, in the Top 10 of
+75 markets) and went to #1 the week after (73.4M hours, 90 of 94 markets). "Season 1", off the
+weekly charts since mid-2024 and in only 2 markets' Top 10 the week before, was back in **56** in
+premiere week and **85 of 94** the week after: climbing in 53 of them (by up to 8 rank places) and
+re-entering from outside the chart in 29 more. This is a directly actionable "content driver"
 finding: a new-season launch's engagement lift is not confined to the new season, and measuring
 the premiere alone undercounts what the release actually earned.
 
